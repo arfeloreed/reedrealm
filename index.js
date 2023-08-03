@@ -1,3 +1,18 @@
+// hamburger animation
+const hamburger = document.getElementById("hamburger");
+var bar1 = document.querySelector(".bar1");
+var bar2 = document.querySelector(".bar2");
+var bar3 = document.querySelector(".bar3");
+var mobileNav = document.getElementById("mobile-nav");
+
+hamburger.addEventListener ("click", () => {
+    bar1.classList.toggle("animatebar1");
+    bar2.classList.toggle("animatebar2");
+    bar3.classList.toggle("animatebar3");
+    mobileNav.classList.toggle("open-mobile-nav");
+})
+
+
 // carousel functions
 var slideIndex = 1;
 showSlides(slideIndex)
